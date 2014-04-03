@@ -1,0 +1,42 @@
+<project>
+	<name>Monster Tag</name>
+	<settings>
+		<defaultWidth>1024</defaultWidth>
+		<defaultHeight>576</defaultHeight>
+		<workingDirectory>gfx</workingDirectory>
+	</settings>
+	<values>
+		<string name="title" default="Level00" maxChars="12" />
+	</values>
+	<tilesets>
+		<tileset name="sky" image="sky.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="brick" image="brick.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="plate" image="plate.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="rock" image="rock.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="bush_l" image="bush_l.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="bush_m" image="bush_m.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="bush_r" image="bush_r.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="cloud_tl" image="cloud_tl.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="cloud_tm" image="cloud_tm.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="cloud_tr" image="cloud_tr.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="cloud_bl" image="cloud_bl.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="cloud_bm" image="cloud_bm.png" tileWidth="32" tileHeight="32"/>
+		<tileset name="cloud_br" image="cloud_br.png" tileWidth="32" tileHeight="32"/>
+	</tilesets>
+	<objects>
+		<object name="hard" image="hard_stand.png" width="32" height="32" limit="1"/>
+		<object name="soft" image="soft_stand.png" width="32" height="32" limit="1"/>
+		<object name="bomb" image="bomb_1.png" width="32" height="32"/>
+		<object name="bird" image="bird_1.png" width="32" height="32"/>
+		<object name="dart" image="dart_1.png" width="32" height="32"/>
+		<object name="bullet" image="bullet.png" width="32" height="32"/>
+		<object name="cherry" image="cherry.png" width="32" height="32"/>
+	</objects>
+	<layers>
+		<tiles name="background" gridSize="32" multipleTilesets="true"/>
+        <grid name="collision" gridSize="8" exportAsObjects="true"/>
+		<tiles name="platforms" gridSize="32" multipleTilesets="true"/>
+		<objects name="objects" gridSize="32" multipleTilesets="true"/>
+		<tiles name="foreground" gridSize="32" multipleTilesets="true"/>
+	</layers>
+</project>
